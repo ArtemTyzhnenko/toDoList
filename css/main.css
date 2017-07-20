@@ -1,0 +1,180 @@
+body {
+    background: #f5f5f5;
+    width: 575px;
+    margin: 0 auto;
+}
+
+.toDoApp {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #f5f5f5;
+    margin: 0 auto;
+    position: relative;
+}
+
+.toDoApp h1 {
+
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    color: red;
+}
+
+.toDoApp .add-todo {
+    position: relative;
+    width: 500px;
+    padding: 16px 16px 16px 60px;
+    border: none;
+    font-size: 24px;
+}
+
+.toggleAll {
+    position: absolute;
+    left: 11px;
+    top: 120px;
+    width: 40px;
+}
+
+.toDoApp .newUl {
+    text-align: center;
+    border: none;
+    font-size: 24px;
+}
+
+.newUl .newLi {
+    position: relative;
+    width: 500px;
+    padding: 16px 60px 16px 16px;
+    text-align: left;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    border-top: 1px solid black;
+}
+
+.newUl .check {
+    position: absolute;
+    margin: auto 0;
+    top: 3px;
+    bottom: 0;
+    width: 40px;
+    text-align: center;
+}
+
+.newUl .newLabel {
+    margin-left: 50px;
+    transition: color 0.4s;
+}
+
+.check[type = checkbox]:checked ~ .newLabel {
+    color: #d9d9d9;
+    text-decoration: line-through;
+
+}
+
+.newUl .remBut {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 25px;
+    float: right;
+    color: green;
+    font-weight: bold;
+}
+
+.newUl .remBut:hover {
+    color: red;
+}
+
+.footer {
+    color: #777;
+    padding: 10px 15px;
+    height: 20px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+    background-color: white;
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+    0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2),
+    0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.todoCount {
+    float: left;
+}
+
+.allButton {
+    display: inline;
+    border: 1px solid yellow;
+    background-color: yellowgreen;
+    width: 50px;
+    height: 20px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 95px;
+    text-align: center;
+    z-index: 1;
+}
+
+.allButton:hover {
+    background-color: yellow;
+    transition: color 10000000s;
+}
+
+.activeButton {
+    display: inline;
+    border: 1px solid yellow;
+    background-color: yellowgreen;
+    width: 50px;
+    height: 20px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.activeButton:hover {
+    background-color: yellow;
+}
+
+.completedButton {
+    display: inline;
+    border: 1px solid yellow;
+    background-color: yellowgreen;
+    width: 85px;
+    height: 20px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.completedButton:hover {
+    background-color: yellow;
+}
+
+.clearCompleted {
+    display: inline;
+    border: 1px solid yellow;
+    background-color: yellowgreen;
+    width: 120px;
+    height: 20px;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+.clearCompleted:hover {
+    background-color: yellow;
+}
